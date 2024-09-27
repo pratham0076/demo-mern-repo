@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Output in JavaScript</title>
+</head>
+<body>
+    <p onclick="alertMsg()">Alert Output</p>
+
+    <button onclick="innerMsg()">Output on inner HTML</button>
+    <p id="inner">Want HTML Inner Output here?</p>
+    <!--On a alert box-->
+
+    <button onclick="changeMsg()">Change the template</button>
+
+    <button onclick="consoleMsg()">Output on Console</button>
+    <script>
+        //niche 4 ways hai output ke
+        //console msg hai ye
+        function consoleMsg(){
+            console.log('Welcome bolte Console Mein');
+        }
+        //write wala hai ye
+        function changeMsg(){
+            document.write("Aagya tu naye template par");
+        }
+        //Alert function
+        function alertMsg(){
+            //alert("Welcome to my alert box guys");
+            window.alert("Welcome to my alert box guys");
+        }
+        //function for inner output
+        function innerMsg(){
+            document.getElementById("inner").innerHTML = "Welcome to my inner HTML box guys";
+        }
+    </script>
+</body>
+</html>
